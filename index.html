@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul | Senior QA Automation Engineer & AI Integration Specialist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for premium animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lenis for smooth scrolling -->
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+</head>
+<body>
+    <!-- Space Background -->
+    <div class="space-background">
+        <canvas id="starfield"></canvas>
+        <div class="nebula-layer">
+            <div class="nebula nebula-1"></div>
+            <div class="nebula nebula-2"></div>
+            <div class="nebula nebula-3"></div>
+        </div>
+        <div class="galaxy-dust"></div>
+        <div class="constellation-lines" id="constellations"></div>
+    </div>
+    
+    <!-- AI Neural Network Overlay -->
+    <div class="neural-network" id="neuralNetwork">
+        <canvas id="neuralCanvas"></canvas>
+    </div>
+    
+    <!-- Floating Particles -->
+    <div class="cosmic-particles" id="cosmicParticles"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-wrapper">
+        <div class="cursor-main"></div>
+        <div class="cursor-trail"></div>
+        <div class="cursor-glow"></div>
+    </div>
+    
+    <!-- Scroll Progress - Golden -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo magnetic-element" data-cursor="hover">
+                <span class="logo-glow">RAHUL</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#expertise" class="nav-link magnetic-element" data-cursor="hover">Expertise</a></li>
+                <li><a href="#tools" class="nav-link magnetic-element" data-cursor="hover">Tools</a></li>
+                <li><a href="#projects" class="nav-link magnetic-element" data-cursor="hover">Projects</a></li>
+                <li><a href="#experience" class="nav-link magnetic-element" data-cursor="hover">Experience</a></li>
+                <li><a href="#about" class="nav-link magnetic-element" data-cursor="hover">About</a></li>
+                <li><a href="#contact" class="nav-link magnetic-element" data-cursor="hover">Contact</a></li>
+            </ul>
+            <button class="hamburger magnetic-element" data-cursor="hover" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <a href="#expertise" class="mobile-nav-link">Expertise</a>
+            <a href="#tools" class="mobile-nav-link">Tools</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section - AI Command Center -->
+    <section id="home" class="hero">
+        <div class="hero-ai-elements">
+            <div class="ai-ring ring-1"></div>
+            <div class="ai-ring ring-2"></div>
+            <div class="ai-ring ring-3"></div>
+            <div class="ai-pulse" id="aiPulse"></div>
+            <div class="data-streams" id="dataStreams"></div>
+            <div class="holographic-grid"></div>
+        </div>
+        
+        <div class="floating-tech">
+            <div class="tech-float tf-1" title="Claude AI"><i class="fas fa-robot"></i></div>
+            <div class="tech-float tf-2" title="GitHub Copilot"><i class="fab fa-github"></i></div>
+            <div class="tech-float tf-3" title="Python"><i class="fab fa-python"></i></div>
+            <div class="tech-float tf-4" title="AI Brain"><i class="fas fa-brain"></i></div>
+            <div class="tech-float tf-5" title="Neural Network"><i class="fas fa-network-wired"></i></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span class="badge-text">Claude AI • GitHub Copilot • LLM Powered</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line" data-text="AI-Powered">AI-Powered</span>
+                <span class="title-line gold-gradient" data-text="Quality Engineering">Quality Engineering</span>
+                <span class="title-shine"></span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Senior QA Automation Engineer & AI Integration Specialist
+            </p>
+            
+            <p class="hero-description">
+                Leveraging <strong class="gold-text">Claude AI</strong>, <strong class="gold-text">GitHub Copilot</strong>, and advanced LLMs 
+                to build intelligent test automation systems. 8+ years architecting enterprise-scale quality frameworks 
+                for startups to Fortune 500 companies like <strong class="gold-text">HSBC</strong> and <strong class="gold-text">Siemens</strong>.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="85">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Automation Coverage</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="stat-number" data-count="4">0</span>
+                    <span class="stat-label">Enterprise Companies</span>
+                </div>
+            </div>
+            
+            <div class="hero-highlights">
+                <div class="highlight-item">
+                    <i class="fas fa-infinity"></i>
+                    <span>Always Available</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Overtime Ready</span>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-award"></i>
+                    <span>Top-Notch Quality</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#experience" class="btn btn-primary magnetic-element" data-cursor="hover">
+                    <span>Explore Systems</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary magnetic-element" data-cursor="hover">
+                    <span>Initialize Contact</span>
+                </a>
+            </div>
+            
+            <div class="career-path-note">
+                <i class="fas fa-rocket"></i>
+                <span>From Startup Projects to Fortune 500 • HSBC • Siemens</span>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator magnetic-element" data-cursor="hover">
+            <div class="mouse-golden">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Initialize</span>
+        </div>
+    </section>
+
+    <!-- Signature Achievement - AI Systems -->
+    <section class="achievement" id="achievement">
+        <div class="container">
+            <div class="section-header" data-scroll-reveal>
+                <div class="section-badge">
+                    <i class="fas fa-microchip"></i>
+                    <span>Core System</span>
+                </div>
+                <h2 class="section-title gold-shimmer">Claude AI & Copilot<br>Testing Framework</h2>
+            </div>
+            
+            <div class="achievement-content" data-scroll-reveal>
+                <p class="achievement-description">
+                    Harnessing the power of <strong class="gold-text">Claude AI</strong> and <strong class="gold-text">GitHub Copilot</strong> 
+                    to build a neural network-powered quality assurance system. Integrating LLM capabilities with enterprise automation 
+                    for unprecedented testing efficiency and intelligent test generation.
+                </p>
+                
+                <div class="ai-tools-showcase">
+                    <div class="ai-tool-card tilt-card" data-cursor="card">
+                        <div class="tool-icon"><i class="fas fa-robot"></i></div>
+                        <h4>Claude AI</h4>
+                        <p>Intelligent test case generation & requirements analysis</p>
+                    </div>
+                    <div class="ai-tool-card tilt-card" data-cursor="card">
+                        <div class="tool-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub Copilot</h4>
+                        <p>AI-assisted automation code & framework development</p>
+                    </div>
+                    <div class="ai-tool-card tilt-card" data-cursor="card">
+                        <div class="tool-icon"><i class="fas fa-brain"></i></div>
+                        <h4>GPT-4 / LLMs</h4>
+                        <p>Predictive analytics & defect pattern recognition</p>
+                    </div>
+                </div>
+                
+                <div class="ai-flow-diagram">
+                    <div class="flow-node tilt-card" data-cursor="card">
+                        <div class="node-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="node-label">Claude Analysis</div>
+                        <div class="node-glow"></div>
+                    </div>
+                    <div class="flow-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-pulse"></div>
+                    </div>
+                    <div class="flow-node tilt-card" data-cursor="card">
+                        <div class="node-icon"><i class="fab fa-github"></i></div>
+                        <div class="node-label">Copilot Generation</div>
+                        <div class="node-glow"></div>
+                    </div>
+                    <div class="flow-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-pulse"></div>
+                    </div>
+                    <div class="flow-node tilt-card" data-cursor="card">
+                        <div class="node-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="node-label">Auto Execution</div>
+                        <div class="node-glow"></div>
+                    </div>
+                    <div class="flow-connector">
+                        <div class="connector-line"></div>
+                        <div class="connector-pulse"></div>
+                    </div>
+                    <div class="flow-node tilt-card" data-cursor="card">
+                        <div class="node-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="node-label">AI Intelligence Report</div>
+                        <div class="node-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="achievement-metrics">
+                    <div class="metric-card tilt-card" data-cursor="card" data-count="60">
+                        <div class="metric-glow"></div>
+                        <div class="metric-value">
+                            <span class="metric-number">0</span><span class="metric-suffix">%</span>
+                        </div>
+                        <div class="metric-label">Manual Effort Reduced</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card tilt-card" data-cursor="card" data-count="85">
+                        <div class="metric-glow"></div>
+                        <div class="metric-value">
+                            <span class="metric-number">0</span><span class="metric-suffix">%+</span>
+                        </div>
+                        <div class="metric-label">Test Coverage</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress"></div>
+                        </div>
+                    </div>
+                    <div class="metric-card tilt-card" data-cursor="card" data-count="3">
+                        <div class="metric-glow"></div>
+                        <div class="metric-value">
+                            <span class="metric-number">0</span><span class="metric-suffix">x</span>
+                        </div>
+                        <div class="metric-label">Faster Release Cycles</div>
+                        <div class="metric-bar">
+                            <div class="metric-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-stack-golden">
+                    <span class="tech-node magnetic-element" data-cursor="hover">Claude AI</span>
+                    <span class="tech-node magnetic-element" data-cursor="hover">GitHub Copilot</span>
+                    <span class="tech-node magnetic-element" data-cursor="hover">Playwright</span>
+                    <span class="tech-node magnetic-element" data-cursor="hover">GPT-4</span>
+                    <span class="tech-node magnetic-element" data-cursor="hover">Python</span>
+                    <span class="tech-node magnetic-element" data-cursor="hover">Azure ML</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Expertise - Systems Grid -->
+    <section id="expertise" class="expertise">
+        <div class="container">
+            <div class="section-header" data-scroll-reveal>
+                <div class="section-badge">
+                    <i class="fas fa-server"></i>
+                    <span>System Modules</span>
+                </div>
+                <h2 class="section-title gold-shimmer">Technical Architecture</h2>
+                <p class="section-subtitle">Enterprise-grade quality engineering systems with AI integration</p>
+            </div>
+            
+            <div class="systems-grid">
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-robot"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>AI-Powered Automation</h3>
+                    <p>Self-healing frameworks with <strong>Claude AI</strong> & <strong>GitHub Copilot</strong>. Intelligent element detection using computer vision and AI-assisted code generation.</p>
+                    <div class="system-stats">
+                        <span class="stat">Claude AI</span>
+                        <span class="stat">Copilot</span>
+                    </div>
+                </div>
+                
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-brain"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>LLM Neural Core</h3>
+                    <p>LLM-powered test generation with <strong>Claude</strong>, predictive defect analysis, and intelligent test prioritization using AI models.</p>
+                    <div class="system-stats">
+                        <span class="stat">Claude 3.5</span>
+                        <span class="stat">GPT-4</span>
+                    </div>
+                </div>
+                
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-network-wired"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>API Matrix</h3>
+                    <p>Comprehensive API automation with REST Assured, GraphQL testing, and contract validation at enterprise scale.</p>
+                    <div class="system-stats">
+                        <span class="stat">10K+ APIs</span>
+                        <span class="stat">&lt;100ms</span>
+                    </div>
+                </div>
+                
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-rocket"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>CI/CD Pipeline</h3>
+                    <p>GitOps-driven deployment with Azure DevOps, Jenkins, and GitHub Actions. AI-assisted pipeline optimization.</p>
+                    <div class="system-stats">
+                        <span class="stat">Zero-downtime</span>
+                        <span class="stat">Auto-scale</span>
+                    </div>
+                </div>
+                
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>Performance Monitor</h3>
+                    <p>Load testing with JMeter, k6, and custom baselines. AI-predictive performance analytics.</p>
+                    <div class="system-stats">
+                        <span class="stat">1M+ Concurrent</span>
+                        <span class="stat">Real-time</span>
+                    </div>
+                </div>
+                
+                <div class="system-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="card-aura"></div>
+                    <div class="system-icon">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <h3>Security Protocol</h3>
+                    <p>Enterprise security for healthcare (FDA/GxP) and FinTech (PCI-DSS). AI-driven vulnerability detection.</p>
+                    <div class="system-stats">
+                        <span class="stat">SOC2</span>
+                        <span class="stat">HIPAA</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ai-workflow-note" data-scroll-reveal>
+                <div class="note-icon"><i class="fas fa-magic"></i></div>
+                <div class="note-content">
+                    <h4>AI-First Development Workflow</h4>
+                    <p>Every project leverages <strong>Claude AI</strong> for requirements analysis, <strong>GitHub Copilot</strong> for code generation, 
+                    and custom LLM integrations for intelligent test orchestration. From startups to Fortune 500 companies like <strong>HSBC</strong> and <strong>Siemens</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QA Arsenal - Full Testing Stack -->
+    <section id="tools" class="qa-tools">
+        <div class="container">
+            <div class="section-header" data-scroll-reveal>
+                <div class="section-badge">
+                    <i class="fas fa-tools"></i>
+                    <span>Full Testing Stack</span>
+                </div>
+                <h2 class="section-title gold-shimmer">QA Arsenal</h2>
+                <p class="section-subtitle">Everything related to software testing — all tools, all languages, all frameworks</p>
+            </div>
+
+            <div class="tools-grid">
+
+                <!-- UI Automation -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-desktop"></i></div>
+                        <h3>UI Automation</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-java"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Selenium WebDriver</span>
+                                <span class="tool-lang">Java + TestNG / JUnit</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-python"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Playwright</span>
+                                <span class="tool-lang">Python + PyTest</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-js-square"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Cypress</span>
+                                <span class="tool-lang">TypeScript / JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-cube"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Cucumber BDD</span>
+                                <span class="tool-lang">Gherkin + Java / Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Automation -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-network-wired"></i></div>
+                        <h3>API Automation</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-java"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">REST Assured</span>
+                                <span class="tool-lang">Java — REST / SOAP</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-python"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">PyTest + Requests</span>
+                                <span class="tool-lang">Python — REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-frog"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Karate DSL</span>
+                                <span class="tool-lang">GraphQL + Contract Testing</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-mail-bulk"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Postman / Newman</span>
+                                <span class="tool-lang">Collections + CI Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Automation -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Automation</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-android"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Appium</span>
+                                <span class="tool-lang">Android + iOS — Java / Python</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">BrowserStack</span>
+                                <span class="tool-lang">Real Device Cloud</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-layer-group"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">LambdaTest</span>
+                                <span class="tool-lang">Cross-browser + Mobile Grid</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-aws"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">AWS Device Farm</span>
+                                <span class="tool-lang">Parallel Mobile Execution</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Testing -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-tachometer-alt"></i></div>
+                        <h3>Performance Testing</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-chart-bar"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">JMeter</span>
+                                <span class="tool-lang">Load + Stress Testing</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">k6 + Gatling</span>
+                                <span class="tool-lang">Script-based Load Testing</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-fire"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Taurus + BlazeMeter</span>
+                                <span class="tool-lang">Cloud Performance Testing</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-python"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Locust</span>
+                                <span class="tool-lang">Python Distributed Load</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Frameworks -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-code"></i></div>
+                        <h3>Languages & Frameworks</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-java"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Java</span>
+                                <span class="tool-lang">TestNG · JUnit · Maven · Gradle</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-python"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Python</span>
+                                <span class="tool-lang">PyTest · Behave · Robot</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-js-square"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">TypeScript / JavaScript</span>
+                                <span class="tool-lang">Mocha · Jasmine · Jest</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-terminal"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Groovy / Bash / SQL</span>
+                                <span class="tool-lang">Scripting + DB Validation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD & DevOps -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-rocket"></i></div>
+                        <h3>CI/CD & DevOps</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-jenkins"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Jenkins</span>
+                                <span class="tool-lang">Pipeline as Code</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-microsoft"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Azure DevOps</span>
+                                <span class="tool-lang">Boards · Pipelines · Test Plans</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-github"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">GitHub Actions</span>
+                                <span class="tool-lang">Workflows + ArgoCD</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-docker"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Docker + Kubernetes</span>
+                                <span class="tool-lang">Containerized Test Suites</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Management & Reporting -->
+                <div class="tool-category-card tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h3>Test Management</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-jira"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">JIRA + Zephyr</span>
+                                <span class="tool-lang">Test Case Management</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-table"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">TestRail</span>
+                                <span class="tool-lang">Test Plans + Reports</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Allure + ReportPortal</span>
+                                <span class="tool-lang">Rich HTML Dashboards</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-database"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">PostgreSQL · MongoDB · Oracle</span>
+                                <span class="tool-lang">DB Validation + Data Testing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI-Powered Testing -->
+                <div class="tool-category-card featured-tool tilt-card" data-scroll-reveal>
+                    <div class="tool-cat-header">
+                        <div class="tool-cat-icon gold-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI-Powered Testing</h3>
+                    </div>
+                    <div class="tool-items">
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-robot"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Claude AI</span>
+                                <span class="tool-lang">Test Generation + Analysis</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fab fa-github"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">GitHub Copilot</span>
+                                <span class="tool-lang">AI Code + Framework Build</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-brain"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">GPT-4 / LLMs</span>
+                                <span class="tool-lang">Synthetic Data + Defect Predict</span>
+                            </div>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item-icon"><i class="fas fa-eye"></i></div>
+                            <div class="tool-item-info">
+                                <span class="tool-name">Healenium + Applitools</span>
+                                <span class="tool-lang">Self-healing + Visual AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects - Mission Control -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-scroll-reveal>
+                <div class="section-badge">
+                    <i class="fas fa-satellite"></i>
+                    <span>Mission Control</span>
+                </div>
+                <h2 class="section-title gold-shimmer">Deployed Systems</h2>
+                <p class="section-subtitle">Enterprise-scale quality engineering deployments with AI integration</p>
+            </div>
+            
+            <div class="missions-grid">
+                <div class="mission-card featured tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="mission-hologram"></div>
+                    <div class="mission-status">
+                        <span class="status-indicator active"></span>
+                        <span class="status-text">OPERATIONAL</span>
+                    </div>
+                    <div class="mission-number">SYS-01</div>
+                    <div class="mission-header">
+                        <h3>Siemens AI-QA Platform</h3>
+                        <p class="mission-type">Fortune 500 Enterprise System</p>
+                    </div>
+                    <p class="mission-description">
+                        Mission-critical operational analytics platform with <strong>Claude AI</strong> integration. 
+                        AI-augmented test generation achieving 85%+ coverage with predictive defect analytics. 
+                        <strong>GitHub Copilot</strong> accelerated development by 60%.
+                    </p>
+                    <div class="mission-specs">
+                        <div class="spec">
+                            <span class="spec-label">AI Framework</span>
+                            <span class="spec-value">Claude + Copilot</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Scale</span>
+                            <span class="spec-value">500+ Tests/Day</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Uptime</span>
+                            <span class="spec-value">99.95%</span>
+                        </div>
+                    </div>
+                    <div class="mission-tech">
+                        <span>Claude AI</span>
+                        <span>GitHub Copilot</span>
+                        <span>Playwright</span>
+                        <span>Azure</span>
+                    </div>
+                </div>
+                
+                <div class="mission-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="mission-hologram"></div>
+                    <div class="mission-status">
+                        <span class="status-indicator completed"></span>
+                        <span class="status-text">DEPLOYED</span>
+                    </div>
+                    <div class="mission-number">SYS-02</div>
+                    <div class="mission-header">
+                        <h3>Alberta Blue Cross HealthCore</h3>
+                        <p class="mission-type">Healthcare Enterprise</p>
+                    </div>
+                    <p class="mission-description">
+                        FDA-compliant healthcare platform with AI-assisted validation. 
+                        <strong>Claude AI</strong> for test case generation, automated case lifecycle workflows, 
+                        HIPAA security protocols.
+                    </p>
+                    <div class="mission-tech">
+                        <span>Claude AI</span>
+                        <span>Selenium</span>
+                        <span>REST Assured</span>
+                    </div>
+                </div>
+                
+                <div class="mission-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="mission-hologram"></div>
+                    <div class="mission-status">
+                        <span class="status-indicator completed"></span>
+                        <span class="status-text">DEPLOYED</span>
+                    </div>
+                    <div class="mission-number">SYS-03</div>
+                    <div class="mission-header">
+                        <h3>HSBC SecureFlow</h3>
+                        <p class="mission-type">Fortune 500 FinTech</p>
+                    </div>
+                    <p class="mission-description">
+                        Banking-grade security testing for HSBC with AI-assisted threat detection. 
+                        <strong>GitHub Copilot</strong> for rapid framework development, 
+                        PCI-DSS compliance, OAuth/MFA validation.
+                    </p>
+                    <div class="mission-tech">
+                        <span>GitHub Copilot</span>
+                        <span>Python</span>
+                        <span>PyTest</span>
+                    </div>
+                </div>
+
+                <div class="mission-card tilt-card" data-cursor="card" data-scroll-reveal>
+                    <div class="mission-hologram"></div>
+                    <div class="mission-status">
+                        <span class="status-indicator completed"></span>
+                        <span class="status-text">DEPLOYED</span>
+                    </div>
+                    <div class="mission-number">SYS-04</div>
+                    <div class="mission-header">
+                        <div class="mission-logo">
+                            <img src="assets/myntra-logo.png" alt="Myntra" class="company-logo-sm">
+                        </div>
+                        <h3>Myntra E-Commerce QA</h3>
+                        <p class="mission-type">Fashion E-Commerce Unicorn</p>
+                    </div>
+                    <p class="mission-description">
+                        End-to-end quality engineering for India's leading fashion e-commerce platform. 
+                        Scaled testing from startup to unicorn status. Mobile app automation with <strong>Appium</strong>, 
+                        cross-browser testing via <strong>BrowserStack</strong>, checkout and payment flow validation, 
+                        catalog search, recommendation engine testing.
+                    </p>
+                    <div class="mission-specs">
+                        <div class="spec">
+                            <span class="spec-label">Scale</span>
+                            <span class="spec-value">50M+ Users</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Coverage</span>
+                            <span class="spec-value">Android + iOS</span>
+                        </div>
+                        <div class="spec">
+                            <span class="spec-label">Automation</span>
+                            <span class="spec-value">UI + API + Mobile</span>
+                        </div>
+                    </div>
+                    <div class="mission-tech">
+                        <span>Appium</span>
+                        <span>Cypress</span>
+                        <span>BrowserStack</span>
+                        <span>REST Assured</span>
+                        <span>JMeter</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="career-note" data-scroll-reveal>
+                <i class="fas fa-chart-line"></i>
+                <p><strong>Career Journey:</strong> From early-stage startup projects to Fortune 500 enterprises. 
+                Proven track record at <strong>HSBC</strong> (Fortune 500 Bank) and <strong>Siemens</strong> (Global Technology Leader). 
+                <strong class="gold-text">Always available</strong> for team collaboration and <strong class="gold-text">overtime ready</strong> for critical releases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header" data-scroll-reveal>
+                <div class="section-badge">
+                    <i class="fas fa-history"></i>
+                    <span>System Logs</span>
+                </div>
+                <h2 class="section-title gold-shimmer">Operational History</h2>
+                <p class="section-subtitle">Mission timeline: Startups to Fortune 500 enterprises</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-line">
+                    <div class="timeline-progress"></div>
+                </div>
+                
+                <div class="timeline-entries">
+                    <div class="timeline-entry" data-scroll-reveal>
+                        <div class="timeline-node active">
+                            <div class="node-pulse"></div>
+                        </div>
+                        <div class="timeline-card tilt-card" data-cursor="card">
+                            <div class="timeline-date">2025 — PRESENT</div>
+                            <div class="timeline-company">
+                                <img src="assets/siemens-logo.png" alt="Siemens" class="company-logo">
+                                <span>Siemens <small>Fortune 500 • Global Technology Leader</small></span>
+                            </div>
+                            <h4>QA Automation Lead — AI Integration</h4>
+                            <p>Leading AI-augmented quality engineering with <strong>Claude AI</strong> and <strong>GitHub Copilot</strong>. 
+                            Architecting LLM-powered testing systems for operational analytics platform. 
+                            End-to-end <strong>UI Automation</strong> with <strong>Playwright (Python)</strong> + <strong>Cypress (TypeScript)</strong>; 
+                            <strong>API Automation</strong> with REST Assured and PyTest. Parallel execution on <strong>BrowserStack</strong> and <strong>LambdaTest</strong>.</p>
+                            <div class="ai-tags">
+                                <span class="ai-tag"><i class="fas fa-robot"></i> Claude AI</span>
+                                <span class="ai-tag"><i class="fab fa-github"></i> Copilot</span>
+                                <span class="ai-tag"><i class="fas fa-brain"></i> GPT-4</span>
+                            </div>
+                            <div class="timeline-tags">
+                                <span>Playwright/Python</span>
+                                <span>Cypress/TS</span>
+                                <span>BrowserStack</span>
+                                <span>LambdaTest</span>
+                                <span>Azure DevOps</span>
+                                <span>ArgoCD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry" data-scroll-reveal>
+                        <div class="timeline-node"></div>
+                        <div class="timeline-card tilt-card" data-cursor="card">
+                            <div class="timeline-date">2020 — 2025</div>
+                            <div class="timeline-company">
+                                <img src="assets/alberta-bluecross-logo.png" alt="Alberta Blue Cross" class="company-logo">
+                                <span>Alberta Blue Cross <small>Healthcare Enterprise</small></span>
+                            </div>
+                            <h4>Senior QA Analyst</h4>
+                            <p>Healthcare compliance testing with AI-assisted validation workflows. 
+                            <strong>UI Automation</strong> using <strong>Selenium with Java</strong> + TestNG/Cucumber BDD; 
+                            <strong>API Automation</strong> with REST Assured and Postman. 
+                            FDA/GxP compliance, HIPAA security, ICH-GCP validation. 
+                            <strong>Best QA Analyst 2 consecutive years.</strong></p>
+                            <div class="ai-tags">
+                                <span class="ai-tag"><i class="fas fa-magic"></i> AI-Assisted</span>
+                            </div>
+                            <div class="timeline-tags">
+                                <span>Selenium/Java</span>
+                                <span>REST Assured</span>
+                                <span>Cucumber BDD</span>
+                                <span>TestNG</span>
+                                <span>FDA/GxP</span>
+                                <span>HIPAA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry" data-scroll-reveal>
+                        <div class="timeline-node"></div>
+                        <div class="timeline-card tilt-card" data-cursor="card">
+                            <div class="timeline-date">2019 — 2020</div>
+                            <div class="timeline-company">
+                                <img src="assets/hsbc-logo.png" alt="HSBC" class="company-logo">
+                                <span>HSBC Bank <small>Fortune 500 • Global Banking</small></span>
+                            </div>
+                            <h4>SDET Engineer</h4>
+                            <p>Banking systems automation with <strong>GitHub Copilot</strong>-assisted development. 
+                            <strong>UI Automation</strong>: Selenium (Java) + Playwright; 
+                            <strong>API Automation</strong>: Karate DSL + PyTest; 
+                            <strong>Mobile Testing</strong> via BrowserStack + LambdaTest. 
+                            PCI-DSS, OAuth/MFA, microservices validation. 
+                            <strong>Certified Outstanding SDET.</strong></p>
+                            <div class="ai-tags">
+                                <span class="ai-tag"><i class="fab fa-github"></i> Copilot</span>
+                            </div>
+                            <div class="timeline-tags">
+                                <span>Selenium/Java</span>
+                                <span>Playwright</span>
+                                <span>Karate DSL</span>
+                                <span>BrowserStack</span>
+                                <span>PCI-DSS</span>
+                                <span>Jenkins</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-entry" data-scroll-reveal>
+                        <div class="timeline-node"></div>
+                        <div class="timeline-card tilt-card" data-cursor="card">
+                            <div class="timeline-date">2017 — 2019</div>
+                            <div class="timeline-company">
+                                <img src="assets/myntra-logo.png" alt="Myntra" class="company-logo">
+                                <span>Myntra Ecommerce <small>Startup → Unicorn • Fashion Leader</small></span>
+                            </div>
+                            <h4>QA Engineer</h4>
+                            <p>E-commerce platform testing from startup phase to unicorn scale. 
+                            <strong>UI Automation</strong>: Cypress (TypeScript) + Selenium; 
+                            <strong>Mobile Automation</strong>: Appium (Android + iOS); 
+                            <strong>API Testing</strong>: REST Assured + Postman; 
+                            <strong>Cross-browser</strong>: BrowserStack + LambdaTest. 
+                            Payment validation, catalog search, recommendation engine. 
+                            <strong>Amazon Best QA Tester Award.</strong></p>
+                            <div class="timeline-tags">
+                                <span>Cypress/TS</span>
+                                <span>Appium</span>
+                                <span>BrowserStack</span>
+                                <span>LambdaTest</span>
+                                <span>JMeter</span>
+                                <span>Agile/Scrum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="availability-banner" data-scroll-reveal>
+                <div class="banner-content">
+                    <i class="fas fa-infinity"></i>
+                    <div class="banner-text">
+                        <h4>Always Available • Overtime Ready • Top-Notch Quality</h4>
+                        <p>From startup hustle to Fortune 500 discipline. Proven at <strong>HSBC</strong> and <strong>Siemens</strong>. Ready to deliver excellence for your team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-main" data-scroll-reveal>
+                    <div class="about-badge">
+                        <i class="fas fa-user-astronaut"></i>
+                        <span>AI Systems Architect</span>
+                    </div>
+                    
+                    <h2 class="about-title gold-shimmer">Powered by Claude AI<br>& GitHub Copilot</h2>
+                    
+                    <p class="about-text">
+                        I'm Rahul — a Senior QA Automation Engineer specializing in <strong class="gold-text">AI-powered quality engineering</strong>. 
+                        I leverage <strong class="gold-text">Claude AI</strong>, <strong class="gold-text">GitHub Copilot</strong>, and advanced LLMs 
+                        to build self-evolving testing systems that learn and adapt.
+                    </p>
+                    
+                    <p class="about-text">
+                        My journey spans from <strong class="gold-text">startup projects</strong> to <strong class="gold-text">Fortune 500 companies</strong> 
+                        like <strong class="gold-text">HSBC</strong> and <strong class="gold-text">Siemens</strong>. 
+                        I'm <strong class="gold-text">always available</strong> for my team, <strong class="gold-text">overtime ready</strong> for critical releases, 
+                        and committed to delivering <strong class="gold-text">top-notch quality</strong> in every project.
+                    </p>
+                    
+                    <div class="ai-highlights">
+                        <div class="ai-highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <span>Claude AI Integration</span>
+                        </div>
+                        <div class="ai-highlight-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Copilot Powered</span>
+                        </div>
+                        <div class="ai-highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>LLM-Driven Testing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-awards">
+                        <div class="award-card tilt-card" data-cursor="card">
+                            <i class="fas fa-trophy"></i>
+                            <span>Best QA Analyst</span>
+                            <small>2 Consecutive Years</small>
+                        </div>
+                        <div class="award-card tilt-card" data-cursor="card">
+                            <i class="fas fa-medal"></i>
+                            <span>Outstanding SDET</span>
+                            <small>HSBC Certification</small>
+                        </div>
+                        <div class="award-card tilt-card" data-cursor="card">
+                            <i class="fas fa-star"></i>
+                            <span>Best QA Tester</span>
+                            <small>Amazon (5000 participants)</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-sidebar" data-scroll-reveal>
+                    <div class="credentials-card tilt-card" data-cursor="card">
+                        <h3>AI-First Credentials</h3>
+                        
+                        <div class="credential-item ai-cred">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <span class="cred-title">Claude AI Expert</span>
+                                <span class="cred-school">Test Generation & Analysis</span>
+                            </div>
+                        </div>
+                        
+                        <div class="credential-item ai-cred">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span class="cred-title">GitHub Copilot Power User</span>
+                                <span class="cred-school">AI-Assisted Development</span>
+                            </div>
+                        </div>
+                        
+                        <div class="credential-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="cred-title">M.S. Software Testing</span>
+                                <span class="cred-school">Montreal College of IT</span>
+                            </div>
+                        </div>
+                        
+                        <div class="credential-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cred-title">ISTQB Certified</span>
+                                <span class="cred-school">Software Testing Board</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="btn btn-primary magnetic-element" data-cursor="hover">
+                            <span>Initiate Contact</span>
+                            <i class="fas fa-satellite-dish"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="work-ethic-card" data-scroll-reveal>
+                        <div class="ethic-item">
+                            <i class="fas fa-infinity"></i>
+                            <span>Always Available</span>
+                        </div>
+                        <div class="ethic-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Overtime Ready</span>
+                        </div>
+                        <div class="ethic-item">
+                            <i class="fas fa-award"></i>
+                            <span>Top-Notch Quality</span>
+                        </div>
+                        <div class="ethic-item">
+                            <i class="fas fa-building"></i>
+                            <span>Startup to Fortune 500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-scroll-reveal>
+                    <div class="contact-badge">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <span>Communication Channel</span>
+                    </div>
+                    
+                    <h2 class="contact-title gold-shimmer">Establish<br>Connection</h2>
+                    
+                    <p class="contact-description">
+                        Ready to bring AI-powered quality engineering to your organization? 
+                        Let's discuss how <strong>Claude AI</strong> and <strong>GitHub Copilot</strong> 
+                        can transform your testing workflow. <strong class="gold-text">Always available</strong> for your team.
+                    </p>
+                    
+                    <div class="contact-highlights">
+                        <div class="contact-highlight">
+                            <i class="fas fa-infinity"></i>
+                            <span>Always Available for Team</span>
+                        </div>
+                        <div class="contact-highlight">
+                            <i class="fas fa-clock"></i>
+                            <span>Overtime Ready for Releases</span>
+                        </div>
+                        <div class="contact-highlight">
+                            <i class="fas fa-building"></i>
+                            <span>Startup to Fortune 500 Experience</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-channels">
+                        <a href="mailto:rahuls73776@gmail.com" class="channel tilt-card magnetic-element" data-cursor="card">
+                            <div class="channel-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Direct Channel</span>
+                                <span class="channel-value">rahuls73776@gmail.com</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+15878718548" class="channel tilt-card magnetic-element" data-cursor="card">
+                            <div class="channel-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Voice Link</span>
+                                <span class="channel-value">+1 (587) 871-8548</span>
+                            </div>
+                        </a>
+                        
+                        <div class="channel tilt-card" data-cursor="card">
+                            <div class="channel-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="channel-info">
+                                <span class="channel-label">Base Station</span>
+                                <span class="channel-value">Toronto, ON · Remote Capable</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" data-scroll-reveal>
+                    <div class="form-hologram">
+                        <div class="holo-scanline"></div>
+                        <div class="holo-corner holo-tl"></div>
+                        <div class="holo-corner holo-tr"></div>
+                        <div class="holo-corner holo-bl"></div>
+                        <div class="holo-corner holo-br"></div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-field">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Designation</label>
+                            <div class="field-glow"></div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Communication ID</label>
+                            <div class="field-glow"></div>
+                        </div>
+                        
+                        <div class="form-field">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Transmission Data</label>
+                            <div class="field-glow"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full magnetic-element" data-cursor="hover">
+                            <span>Transmit Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="formSuccess">
+                        <div class="success-hologram">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h4>Transmission Complete</h4>
+                        <p>Message received. Expect response within 24 hours. Always available for follow-up.</p>
+                        <button class="btn btn-secondary" id="sendAnother">
+                            <span>New Transmission</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content" data-scroll-reveal>
+                <div class="footer-brand">
+                    <span class="footer-logo">RAHUL</span>
+                    <p class="footer-tagline">AI-Powered QA Engineer • Claude AI • GitHub Copilot</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank" class="footer-link magnetic-element" data-cursor="hover">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="footer-link magnetic-element" data-cursor="hover">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:rahuls73776@gmail.com" class="footer-link magnetic-element" data-cursor="hover">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p>&copy; 2017 — 2026 Rahul. All systems operational. 
+                <span class="footer-glow">Claude AI • GitHub Copilot • Always Available</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

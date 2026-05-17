@@ -2767,14 +2767,12 @@ ul {
 
 /* Company logos in timeline */
 .company-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
     border-radius: 8px;
-    background: rgba(255,255,255,0.08);
-    padding: 4px;
-    border: 1px solid rgba(255,255,255,0.12);
     flex-shrink: 0;
+    display: block;
 }
 
 .mission-logo {
@@ -2782,12 +2780,11 @@ ul {
 }
 
 .company-logo-sm {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
     border-radius: 6px;
-    background: rgba(255,255,255,0.08);
-    padding: 3px;
+    display: block;
 }
 
 /* Responsive for new elements */
